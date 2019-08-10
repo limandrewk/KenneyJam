@@ -87,6 +87,10 @@ public class CardUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 
     public void OnBeginDrag( PointerEventData eventData )
     {
+        if( !m_deck.m_directionBoxLocked && m_location == Location.Direction ) return;
+        if( !m_deck.m_heightBoxLocked && m_location == Location.Height ) return;
+        if( !m_deck.m_powerBoxLocked && m_location == Location.Power ) return;
+        
         m_initialPos = transform.position;
     }
 
@@ -98,9 +102,12 @@ public class CardUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
     public void OnEndDrag( PointerEventData eventData )
     {
         // If inside a box put it there, otherwise return it to the top
-        
+        if( !m_deck.m_directionBoxLocked && m_location == Location.Direction ) return;
+        if( !m_deck.m_heightBoxLocked && m_location == Location.Height ) return;
+        if( !m_deck.m_powerBoxLocked && m_location == Location.Power ) return;
+
         Vector2 directionPosition = m_deck.m_directionBox.rectTransform.InverseTransformPoint( Input.mousePosition );
-        if ( m_deck.m_directionBox.rectTransform.rect.Contains( directionPosition ) )
+        if ( !m_deck.m_directionBoxLocked && m_deck.m_directionBox.rectTransform.rect.Contains( directionPosition ) )
         {
             if( m_location == Location.Direction ) { transform.position = m_initialPos; return; }
             
@@ -123,7 +130,7 @@ public class CardUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
         }
         
         Vector2 heightPosition = m_deck.m_heightBox.rectTransform.InverseTransformPoint( Input.mousePosition );
-        if ( m_deck.m_heightBox.rectTransform.rect.Contains( heightPosition ) )
+        if ( !m_deck.m_heightBoxLocked && m_deck.m_heightBox.rectTransform.rect.Contains( heightPosition ) )
         {
             if( m_location == Location.Height ) { transform.position = m_initialPos; return; }
             
@@ -146,7 +153,7 @@ public class CardUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
         }
         
         Vector2 powerPosition = m_deck.m_powerBox.rectTransform.InverseTransformPoint( Input.mousePosition );
-        if ( m_deck.m_powerBox.rectTransform.rect.Contains( powerPosition ) )
+        if ( !m_deck.m_powerBoxLocked && m_deck.m_powerBox.rectTransform.rect.Contains( powerPosition ) )
         {
             if( m_location == Location.Power ) { transform.position = m_initialPos; return; }
             
