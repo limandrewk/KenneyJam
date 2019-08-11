@@ -4,6 +4,7 @@
     <list default="true" id="920eee66-6d17-43cc-b84c-c3fa754bec2b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KenneyJam/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KenneyJam/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KenneyJam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KenneyJam/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Deck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Deck.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Deck.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Deck.cs.meta" afterDir="false" />
@@ -18,7 +19,21 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CardHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CardHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CardUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CardUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GolfBall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GolfBall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LotteInspectorButtonsTest.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LotteInspectorButtonsTest/InspectorButtonsTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LotteInspectorButtonsTest/InspectorButtonsTest.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LotteInspectorButtonsTest/ProgressBarAttribute.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LotteInspectorButtonsTest/ProgressBarAttribute.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LotteInspectorButtonsTest/ProgressBarDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LotteInspectorButtonsTest/ProgressBarDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LotteInspectorButtonsTest/TestButtonAttribute.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LotteInspectorButtonsTest/TestButtonAttribute.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LotteInspectorButtonsTest/TestButtonDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LotteInspectorButtonsTest/TestButtonDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,10 +45,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LotteInspectorButtonsTest/InspectorButtonsTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/SimpleRadialProgressBar.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/RadialProgressBar.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LotteInspectorButtonsTest/TestButtonDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CardUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GolfBall.cs" root0="FORCE_HIGHLIGHTING" />
@@ -50,13 +63,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CardRandomizer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CardRandomiser.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CardUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CardHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Deck.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DeathZone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GolfBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectiveZone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CardHandler.cs" />
       </list>
     </option>
   </component>
@@ -116,7 +129,7 @@
       <workItem from="1565390038900" duration="57000" />
       <workItem from="1565390098138" duration="6735000" />
       <workItem from="1565438436052" duration="18085000" />
-      <workItem from="1565469345228" duration="22346000" />
+      <workItem from="1565469345228" duration="23005000" />
     </task>
     <servers />
   </component>
