@@ -65,10 +65,6 @@ public class CardHandler : MonoBehaviour
         public Value m_highCard;
     }
     
-    [TestButton("Evaluate Hand", "EvaluateHand", isActiveInEditor = true)]
-    [ProgressBar(hideWhenZero = true, label = "procGenFeedback")]
-    public float procgenProgress = -1;
-
     public int m_test = 0;
     public List<Suit> m_suits = new List<Suit>();
     public List<Value> m_values = new List<Value>();
@@ -108,7 +104,6 @@ public class CardHandler : MonoBehaviour
     public static HandValue EvaluateCards( List<Card> cards )
     {
         HandValue result = new HandValue();
-        Debug.Log( "Attempting to evaluate static hand of size " + cards.Count );
 
         List<Card> m_pairs = new List<Card>();
         List<Card> m_threes = new List<Card>();
@@ -154,26 +149,31 @@ public class CardHandler : MonoBehaviour
         {
             result.m_type = HandType.FullHouse;
             result.m_highCard = m_threes[0].m_value;
+            return result;
         }
         else if( isTwoPair ) 
         {
             result.m_type = HandType.TwoPair;
             result.m_highCard = m_pairs[0].m_value > m_pairs[2].m_value ? m_pairs[0].m_value : m_pairs[2].m_value;
+            return result;
         }
         else if( m_fours.Count > 0 ) 
         {
             result.m_type = HandType.FourOfAKind;
             result.m_highCard = m_fours[0].m_value;
+            return result;
         }
         else if( m_threes.Count > 0 ) 
         {
             result.m_type = HandType.ThreeOfAKind;
             result.m_highCard = m_threes[0].m_value;
+            return result;
         }
         else if( m_pairs.Count > 0 ) 
         {
             result.m_type = HandType.Pair;
             result.m_highCard = m_pairs[0].m_value;
+            return result;
         }
 
         if( cards.Count == 0 ) return result;
@@ -208,6 +208,7 @@ public class CardHandler : MonoBehaviour
         {
             result.m_type = HandType.Flush;
             result.m_highCard = highCard;
+            return result;
         }
 
         result.m_type = HandType.HighCard;

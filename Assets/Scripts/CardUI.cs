@@ -23,7 +23,7 @@ public class CardUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
     
     private float m_cardWidth;
 
-    private bool m_frontFacing = false;
+    public bool m_frontFacing = false;
     public bool m_isAnimating = false;
 
     public Deck m_deck;
@@ -80,7 +80,7 @@ public class CardUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
         }
     }
 
-    void FlipCard()
+    public void FlipCard()
     {
         m_isAnimating = true;
     }
@@ -102,9 +102,9 @@ public class CardUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
     public void OnEndDrag( PointerEventData eventData )
     {
         // If inside a box put it there, otherwise return it to the top
-        if( !m_deck.m_directionBoxLocked && m_location == Location.Direction ) return;
-        if( !m_deck.m_heightBoxLocked && m_location == Location.Height ) return;
-        if( !m_deck.m_powerBoxLocked && m_location == Location.Power ) return;
+        if( m_deck.m_directionBoxLocked && m_location == Location.Direction ) { transform.position = m_initialPos; return; }
+        if( m_deck.m_heightBoxLocked && m_location == Location.Height ) { transform.position = m_initialPos; return; }
+        if( m_deck.m_powerBoxLocked && m_location == Location.Power ) { transform.position = m_initialPos; return; }
 
         Vector2 directionPosition = m_deck.m_directionBox.rectTransform.InverseTransformPoint( Input.mousePosition );
         if ( !m_deck.m_directionBoxLocked && m_deck.m_directionBox.rectTransform.rect.Contains( directionPosition ) )
@@ -193,8 +193,7 @@ public class CardUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
         m_location = Location.Hand;
         m_deck.OrganiseCards();
     }
-
-
+    
     public void SetPosition( float x, float y )
     {
         m_rect.anchoredPosition = new Vector2( x, y );

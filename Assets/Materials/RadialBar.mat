@@ -72,7 +72,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Arcrange: 270
+    - _Arcrange: 140
     - _Backgroundborderopacity: 1
     - _Backgroundborderradialwidth: 0
     - _Backgroundbordertangentwidth: 0
@@ -82,7 +82,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _Fillpercentage: 1
-    - _Globalopacity: 1
+    - _Globalopacity: 0.8
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1

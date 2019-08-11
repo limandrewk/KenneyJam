@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -85,6 +86,16 @@ MonoBehaviour:
   - name: Join
     keyboardInputs: 30000000
     gamepadInputs: 17000000
+    mouseInputs: 
+    virtualInputs: []
+  - name: FlyUp
+    keyboardInputs: 09000000
+    gamepadInputs: 
+    mouseInputs: 
+    virtualInputs: []
+  - name: FlyDown
+    keyboardInputs: 15000000
+    gamepadInputs: 
     mouseInputs: 
     virtualInputs: []
   smartControls:
